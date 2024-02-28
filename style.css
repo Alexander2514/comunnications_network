@@ -1,0 +1,435 @@
+*{
+  box-sizing: border-box;
+
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white; /* Fondo oscuro */
+}
+/* Estilo para la sección 2 */
+.container-seccion1 {
+  max-width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  margin-top: 12rem; /* Margen superior agregado */
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para todos los tamaños de pantalla */
+  align-items: center; /* Centrar elementos */
+}
+
+.text {
+  width: 90%; /* Limitar el ancho del texto */
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.image {
+  margin-top: 20px;
+  margin-right: 9%;
+}
+
+.image img {
+  max-width: 100%; /* Ajustar el ancho máximo de la imagen */
+  height: auto;
+  border-radius: 50%;
+  display: block; /* Para asegurar que la imagen no tenga margen adicional */
+  margin: 0 auto; /* Centrar la imagen */
+}
+
+/* Eliminamos las animaciones */
+.image img:hover {
+  transform: none; /* Eliminamos la transformación al pasar el ratón sobre la imagen */
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.text p {
+  font-size: 1.8rem;
+  color: #666;
+}
+
+/* Media query para dispositivos con un ancho máximo de 1400px */
+@media screen and (max-width: 1400px) {
+  .content {
+    flex-direction: column; /* Cambiamos la dirección del contenido a columna */
+    text-align: center; /* Centramos el texto */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .image {
+    margin-top: 20px;
+    margin-right: 0; /* Eliminamos el margen derecho en pantallas más pequeñas */
+  }
+}
+
+
+
+
+
+
+
+/* Estilo para el encabezado */
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1000; /* Asegura que esté por encima del resto del contenido */
+  top: 0; /* Ajuste para asegurar que no se superponga con el contenido */
+}
+
+.logo img {
+  max-height: 130px; /* Limita la altura del logo */
+}
+
+.nav-links-header {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links-header li {
+  margin-right: 20px;
+  font-size: 1.8rem;
+}
+
+/* Estilo para la sección 2 */
+.container-seccion1 {
+  display: flex;
+  flex-direction: column-reverse; /* Invierte el orden de los elementos en pantallas más pequeñas */
+  align-items: center;
+}
+
+
+
+.nnav-links-header li a {
+  color: #fff; /* Color del texto del enlace */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links-header li a:hover {
+  color: #ccc; /* Color del texto del enlace al pasar el mouse */
+}
+
+.container-servicios {
+  background-color: #2b2857;
+  padding: 50px 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+
+
+/* Media query para pantallas con un ancho máximo de 800px */
+@media screen and (max-width: 800px) {
+  .navbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar1 ul {
+    display: none; /* Ocultar la lista de elementos de navegación */
+  }
+
+  .navbar1 .logo {
+    display: block; /* Mostrar el logo */
+    margin-bottom: 20px; /* Agregar un margen inferior */
+  }
+}
+
+/* Media query para pantallas con un ancho entre 800px y 1300px */
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .content {
+    flex-direction: column; /* Cambiar a columna */
+  }
+
+  .image {
+    margin-top: 20px; /* Agregar margen superior */
+  }
+}
+
+
+
+
+
+
+.ourServices{
+  margin-top: 5.6rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .container-servicios {
+    padding: 50px 10px; /* Ajusta el espaciado interno en pantallas pequeñas */
+  }
+
+  .imagen_servicios image {
+    text-align: center; /* Alinea la imagen al centro en pantallas pequeñas */
+   
+  }
+}
+
+
+.Servicios {
+  max-width: 800px;
+  font-size: 18px;
+}
+
+.Servicios h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.Servicios p {
+  margin-bottom: 10px;
+}
+
+.container-servicios figure {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.container-servicios img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Estilos para la tarjeta */
+.card-container {
+  max-width: 350px; /* Ancho máximo de la tarjeta */
+  /* background-color: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 15px 15px rgba(14, 13, 13, 0.1);
+  overflow: hidden;
+  margin: 20px auto; /* Centramos horizontalmente y agregamos margen superior e inferior */
+  background-color: #faf6f6; /* Color de fondo grisáceo */
+  
+ 
+}
+
+.card-image {
+  width: 100%;
+  max-height: 385px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 2.9rem; /* Tamaño del título */
+  margin-bottom: 10px;
+  color: #0E1117;
+}
+
+.card-text {
+  font-size: 2.4rem; /* Tamaño del texto */
+  color: #0E1117;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 765px) {
+  .container-cards {
+    display: flex;
+    justify-content: center; /* Centramos las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permitimos que se envuelvan en una nueva línea */
+  }
+
+  .card-container {
+    max-width: calc(30% - 35px); /* Calculamos el ancho para dos tarjetas por columna */
+    margin: 20px; /* Agregamos espacio entre las tarjetas */
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 1600px) {
+  .container-servicios {
+    flex-direction: row;
+     justify-content: center;  /*Alinea horizontalmente en pantallas grandes  */
+    text-align: left;
+    align-items: center;
+      }
+
+  .Servicios {
+    margin-left: 20px;  /*Ajusta el margen izquierdo para mantener el contenido centrado*/ 
+  }
+
+  .container-servicios figure {
+     margin-right: 20px;  /*Ajusta el margen derecho para mantener el contenido centrado 
+  } */
+} 
+}
+@media screen and (max-width: 767px) {
+  .container-servicios {
+    padding: 50px 10px; /* Reduce el espaciado interno en pantallas pequeñas */
+  }
+  .Servicios{
+    text-align: center;
+  }
+
+  .imagen_servicios img{
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width:1400px){
+  .container-servicios {
+    padding: 50px 10px; /* Reduce el espaciado interno en pantallas pequeñas */
+  }
+  .Servicios{
+    text-align: center;
+  }
+
+  .imagen_servicios img{
+    width: 36rem;
+  }
+}
+
+
+/* div .container{
+  margin-left: 4.6rem;
+  margin-right: 4.6rem;
+} */
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row; /* Cambia la dirección del contenido a fila */
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+
+  .text {
+    width: 50%; /* Ocupa la mitad del ancho disponible */
+    color: #fff; /* Cambia el color del texto a blanco */
+    margin-bottom: 0; /* Elimina el espacio inferior */
+  }
+
+  .image {
+    width: 50.6rem; /* Ocupa el 45% del ancho disponible */
+    text-align: right; /* Alinea la imagen a la derecha */
+  }
+
+  .navbar {
+    padding-bottom: 10px; /* Reduce el espacio inferior de la barra de navegación */
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 1230px) {
+  .content {
+    flex-direction: column; /* Cambia la dirección del contenido a columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+  }
+
+  .text, .image {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: initial; /* Centra el texto e imagen */
+    margin-bottom: 20px; /* Agrega espacio entre el texto/imagen y la siguiente sección */
+    flex-direction: column;
+  }
+}
+
+.seccion-oscura{
+  background-color: #3a3a3d;
+  font-size: 1.8rem;
+}
+
+
+
+
+
+.footer {
+  background-color: #3a3a3d;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.footer p {
+  font-size: 18px;
+}
+
+.footer h5 {
+  font-size: 20px;
+}
+
+.footer .iconos-redes-sociales {
+  font-size: 24px;
+}
+
+.footer .iconos-redes-sociales a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.footer .privacy-policy-container {
+  
+  padding: 40px 0;
+}
+
+.footer .privacy-policy {
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.footer .privacy-policy h5 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer .privacy-policy p {
+  color: #ddd;
+  line-height: 1.8;
+}
+
+/* Añade cualquier otro estilo que desees para mejorar la apariencia del footer */
+
+@media (max-width: 767px) {
+  .footer .row {
+      flex-direction: column;
+  }
+  
+  .footer .row > div {
+      margin-bottom: 20px;
+  }
+  
+  .footer .privacy-policy-container {
+      padding-top: 40px;
+  }
+}
+
+
+.nuestros_servicios{
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+  text-align: center;
+}
