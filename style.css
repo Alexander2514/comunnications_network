@@ -35,7 +35,8 @@ body {
 
 .image {
   margin-top: 20px;
-  margin-right: 9%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .image img {
@@ -57,8 +58,17 @@ body {
 }
 
 .text p {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   color: #666;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width:1230px){
+  .text p{
+    margin-left: 5px;
+    max-width: 95%;
+  }
 }
 
 /* Media query para dispositivos con un ancho máximo de 1400px */
@@ -228,7 +238,7 @@ body {
   overflow: hidden;
   margin: 20px auto; /* Centramos horizontalmente y agregamos margen superior e inferior */
   background-color: #faf6f6; /* Color de fondo grisáceo */
-  
+  color: rgb(83, 80, 80);
  
 }
 
@@ -239,17 +249,18 @@ body {
 
 .card-content {
   padding: 20px;
+  
 }
 
 .card-title {
   font-size: 2.9rem; /* Tamaño del título */
   margin-bottom: 10px;
-  color: #0E1117;
+  color: rgb(83, 80, 80);
 }
 
 .card-text {
   font-size: 2.4rem; /* Tamaño del texto */
-  color: #0E1117;
+  color: rgb(83, 80, 80);
 }
 
 /* Ajustes para pantallas grandes */
@@ -428,8 +439,130 @@ body {
 }
 
 
-.nuestros_servicios{
-  font-size: 2.5rem;
+.nuestros_servicios {
+  
   margin-top: 3.5rem;
   text-align: center;
+  color: rgb(83, 80, 80);
 }
+.nuestros_servicios h2{
+  font-size: 2.6rem;
+  font-weight: bolder;
+}
+
+.nuestros_servicios p{
+  font-size: 1.8rem;
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media  (max-width:750px) {
+  .nuestros_servicios p{
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text p {
+    font-size: 2rem; /* Tamaño de fuente para pantallas más pequeñas */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .text p{
+    font-size: 1.8rem; /* Tamaño de fuente para pantallas aún más pequeñas */}
+  }
+
+  .contacto-block {
+    background-color: #e2dcbc52;
+    margin-top: 7.5rem;
+    padding-bottom: 8.5rem;
+  }
+  
+  .contacto-card {
+    border: 4px solid #176eca;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    height: 30rem;
+    background-color: #e2dcbc52;
+  }
+  
+  .contacto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contacto-icon {
+    font-size: 6rem;
+    color: #6986a7;
+  }
+  
+  .btn-contacto {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-contacto:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .contacto-form {
+    margin-top: 6.5rem;
+    border: 2px solid #28a745;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 7rem;
+    background-color: #e2dcbc52; /* Cambiado de #fff */
+  }
+  
+  .formulario-contacto {
+    height: 45rem;
+    font-size: 1.8rem;
+  }
+  
+  .titulo-contacto {
+    text-align: center;
+    color: rgb(83, 80, 80);
+  }
+  
+  .titulo-contacto h1 {
+    padding-top: 4.5rem;
+    font-weight: bold;
+  }
+  
+  .titulo-contacto p {
+    font-size: 1.6rem;
+  }
+  
+  .contacto-form input{
+    height: 5.5rem;
+  }
+
+  @media (max-width: 992px){
+    .contacto-form{
+      margin-left: auto;
+      margin-left: auto;
+      margin-top: 1.5rem;
+    }
+  }
+
+
+
+
+
+  #mensaje-enviado{
+    display: none; 
+    color: aquamarine; 
+    font-size: 1.2rem;
+    margin-top: 5px;
+    padding-top: 5px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
